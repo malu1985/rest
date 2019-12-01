@@ -18,7 +18,7 @@ $app->add(function ($req, $res, $next) {
 
 // Get All Customers
 $app->get('/api/customers', function(Request $request, Response $response){
-    $sql = "SELECT * FROM producto";
+    $sql = "SELECT * FROM categoria";
 
     try{
         // Get DB Object
@@ -36,10 +36,10 @@ $app->get('/api/customers', function(Request $request, Response $response){
 });
 
 // Get Single Customer
-$app->get('/api/customer/{id_producto}', function(Request $request, Response $response){
-    $id_producto = $request->getAttribute('id_producto');
+$app->get('/api/customer/{id_categoria}', function(Request $request, Response $response){
+    $id_categoria = $request->getAttribute('id_producto');
 
-    $sql = "SELECT * FROM producto WHERE id_producto = $id_producto";
+    $sql = "SELECT * FROM categoria WHERE id_categoria = $id_categoria";
 
     try{
         // Get DB Object
