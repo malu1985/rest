@@ -37,7 +37,7 @@ $app->get('/api/customers', function(Request $request, Response $response){
 
 // Get Single Customer
 $app->get('/api/customer/{id_categoria}', function(Request $request, Response $response){
-    $id_categoria = $request->getAttribute('id_producto');
+    $id_categoria = $request->getAttribute('id_categoria');
 
     $sql = "SELECT * FROM categoria WHERE id_categoria = $id_categoria";
 
