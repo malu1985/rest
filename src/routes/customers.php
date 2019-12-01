@@ -37,7 +37,7 @@ $app->get('/api/customers', function(Request $request, Response $response){
 
 // Get Single Customer
 $app->get('/api/customer/{id}', function(Request $request, Response $response){
-    $id = $request->getAttribute('id_producto');
+    $id_producto = $request->getAttribute('id_producto');
 
     $sql = "SELECT * FROM producto WHERE id_producto = $id_producto";
 
