@@ -1,10 +1,10 @@
 <?php
     class db{
         // Properties
-        private $dbhost = 'remotemysql.com';
-        private $dbuser = 'tK42tdZGro';
-        private $dbpass = '0bhEbygdy6';
-        private $dbname = 'tK42tdZGro';
+        private $dbhost = 'sql10.freemysqlhosting.net';
+        private $dbuser = 'sql10343323';
+        private $dbpass = 'K13WhJgcQ2';
+        private $dbname = 'sql10343323';
         // Connect
         public function connect(){
             $mysql_connect_str = "mysql:host=$this->dbhost;dbname=$this->dbname";
